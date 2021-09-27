@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>Cropwayy | Home</title>
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+<link rel="stylesheet" href= "{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}">   
+
+  <!--external css-->
+    <link rel="stylesheet" href= "{{ url_for('static', filename='lib/font-awesome/css/font-awesome.css') }}">  
+  <!-- Custom styles for this template -->
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/style.css') }}">  
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/style-responsive.css') }}"> 
+  
+    
+    <style>
+    
+  
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column1 {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 15px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;  
+}
+
+
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    <style>
+         
+              .adjust {
+ margin: 20px;
+                  
+}
+          
+        
+        .content-pannel{
+            width: 100%;
+            
+        }
+        .pn{
+            
+                margin:15px;
+            background-color: #d9534f;
+            color: white;
+            height: auto;
+        }
+        #profile-01{
+            background-image: url(img/about.jpg);
+            width:auto;
+            margin:15px;
+            
+        }
+        img.src{
+            width: 100px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+  
+  <section id="container">
+    
+    
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="{{url_for('home')}}" class="logo"><b>Prediction Model <span>for Distribution Center Receiving Forecast</span></b></a>
+      <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+      
+      </div>
+      <div class="top-menu">
+       
+      </div>
+    </header>
+    
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><img src="{{ url_for('static', filename='img/logo.png') }}" class="img-circle" width="80"></p>
+          <h5 class="centered">Tractor Supply</h5>
+               
+              <li class="mt">
+                <a  href="{{url_for('home')}}">
+                  <i class="fa fa-dashboard"></i>
+                  <span>Dashboard</span>
+                  </a>
+              </li>
+              <li >
+                <a  href="{{url_for('prediction')}}">
+                  <i class="fa fa-desktop"></i>
+                  <span>Inbound Truckloads</span>
+                  </a>
+              </li>
+              <li >
+                <a  href="{{url_for('prediction2')}}">
+                  <i class="fa fa-desktop"></i>
+                  <span>Reciept Units</span>
+                  </a>
+              </li>
+              <li >
+                <a  href="{{url_for('prediction3')}}">
+                  <i class="fa fa-desktop"></i>
+                  <span>Sales Units</span>
+                  </a>
+              </li>
+              <li >
+                <a class="active" href="{{url_for('aboutus')}}">
+                  <i class="fa fa-globe"></i>
+                  <span>About Us</span>
+                  </a>
+              </li>
+         
+            
+            </ul>
+            <!-- sidebar menu end-->
+          </div>
+      
+        </aside>
+            
+           
+        
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+        
+         <div >
+             
+             <img src="{{ url_for('static',filename='img/about.png') }}" width=100% height=300px/>
+          </div>
+          
+           <div>
+                <div class="content-panel pn">
+                  
+                  <div class="row ">
+                     
+                       <div class="col-md-12">
+                      <div class="adjust">
+                         
+                          <img src="{{ url_for('static',filename='img/about1.jpg') }}" width=28% height=300px align="left"/></div>
+                      
+                      <div class="row">
+                      <div class="col-md-8 mb">
+                      <font size="4"> 
+                       <p >Agriculture is the backbone of the Indian Economy"- said Mahatma Gandhi six decades ago. Even today, the situation is still the same, with almost the entire economy being sustained by agriculture, which is the mainstay of the villages. It contributes 16% of the overall GDP and accounts for employment of approximately 52% of the Indian population. Rapid growth in agriculture is essential not only for self-reliance but also to earn valuable foreign exchange.</p>
+                    
+                          <p>Indian farmers are second to none in production and productivity despite of the fact that millions are marginal and small farmers. They adopt improved agriculture technology as efficiently as farmers in developed countries. It is felt that with provision of timely and adequate inputs such as fertilizers, seeds, pesticides and by making available affordable agricultural credit /crop insurance, Indian farmers are going to ensure food and nutritional security to the Nation.</p></font>
+                             
+                      </div></div>
+                           <div class="adjust">
+                            <div class="row" >
+                                <div class="col-md-12 mb">
+                                    <font size="4"> 
+                                        <p>It is envisaged to make available relevant information and services to the farming community and private sector through the use of information and communication technologies, to supplement the existing delivery channels provided for by the department. Farmers’ Portal is an endeavour in this direction to create one stop shop for meeting all informational needs relating to Agriculture, Animal Husbandry and Fisheries sectors production, sale/storage of an Indian farmer. With this Indian Farmer will not be required to sift through maze of websites created for specific purposes.</p>
+                                        <p>Once in the Farmers’ Portal, a farmer will be able to get all relevant information on specific subjects around his village/block /district or state. This information will be delivered in the form of text, SMS, email and audio/video in the language he or she understands. These levels can be easily reached through the Map of India placed on the Home page. Farmers will also be able to ask specific queries as well as give valuable feedback through the Feedback module specially developed for the purpose.
+                                        
+                                        </p>
+                                    </font>
+                                </div></div></div></div>
+                </div>
+                    
+                   
+                <!-- /content-panel -->
+               </div></div>
+           <h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column1">
+    <div class="card">
+      <img src="{{ url_for('static',filename='img/ks.jpg') }}" alt="Kushagra" style="width:100%">
+      <div class="container">
+        <h2>Kushagra Sharma</h2>
+        <p class="title">Nokar</p>
+     
+        <p>giantkillerkushagra@gmail.com</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card">
+    <img src="{{ url_for('static',filename='img/shristi_full.jpeg') }}" alt="Kushagra" style="width:100%">
+      <div class="container">
+        <h2>Shristi Bansal</h2>
+        <p class="title">Founder</p>
+    
+        <p>shristibansal6@gmail.com</p>
+       
+      </div>
+    </div>
+  </div>
+
+</div>
+          <br><br><br><br><br>
+      </section>
+      <!-- /wrapper -->
+    </section>
+      
+      
+    <!-- /MAIN CONTENT -->
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+        <p>
+          &copy; Copyrights <strong>TSC</strong>. All Rights Reserved
+        </p>
+        <div class="credits">
+
+          Created by team TECHWAYY
+        </div>
+        
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+    <script src="{{ url_for('static', filename='lib/jquery/jquery.min.js') }}" type="text/javascript"></script>
+     <script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
+     <script src="{{ url_for('static', filename='lib/jquery-ui-1.9.2.custom.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='lib/jquery.ui.touch-punch.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='lib/jquery.ui.touch-punch.min.js') }}" type="text/javascript"></script>
+ <script src="{{ url_for('static', filename='lib/jquery.dcjqaccordion.2.7.js') }}" type="text/javascript"></script>
+ <script src="{{ url_for('static', filename='lib/jquery.scrollTo.min.js') }}" type="text/javascript"></script>
+ <script src="{{ url_for('static', filename='lib/jquery.nicescroll.js') }}" type="text/javascript"></script>
+
+    
+
+  <!--common script for all pages-->
+     <script src="{{ url_for('static', filename='lib/common-scripts.js') }}" type="text/javascript"></script>
+ 
+  <!--script for this page-->
+
+</body>
+
+</html>
